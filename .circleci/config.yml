@@ -6,5 +6,5 @@ jobs:
     steps:
       - add_ssh_keys:
           fingerprints:
-            - "df:50:ef:c5:59:a0:1b:77:6f:1a:42:56:9c:49:bd:0e"
+            - "b8:71:8f:13:01:c5:17:1e:75:3c:ca:ed:4b:52:b6:86"
       - run: ssh -vvv -o StrictHostKeyChecking=no $SSH_USER@$SSH_HOST "ls"
