@@ -5,6 +5,9 @@ jobs:
       image: 'ubuntu-1604:201903-01'
     steps:
       - checkout
+      - add_ssh_keys:
+        fingerprints:
+          - "df:50:ef:c5:59:a0:1b:77:6f:1a:42:56:9c:49:bd:0e"
       - run: echo "Hello world!"
       - run:
           name: Deploy ver SSH
