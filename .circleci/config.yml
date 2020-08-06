@@ -4,10 +4,9 @@ jobs:
     machine:
       image: 'ubuntu-1604:201903-01'
     steps:
-      - add_ssh_keys:
-        fingerprints:
-              - "df:50:ef:c5:59:a0:1b:77:6f:1a:42:56:9c:49:bd:0e"
+      - checkout
+      - run: echo "Hello world!"
       - run:
-          name: Deploy Over SSH
+          name: Deploy ver SSH
           command: |
-            ssh $SSH_USER@$SSH_HOST "ls"
+            ssh $SSH_USER$SSH_HOST "ls"
