@@ -7,4 +7,6 @@ jobs:
       - add_ssh_keys:
           fingerprints:
             - "df:50:ef:c5:59:a0:1b:77:6f:1a:42:56:9c:49:bd:0e"
-      - run: ssh $SSH_USER@$SSH_HOST "ls"
+              #      - run: ssh $SSH_USER@$SSH_HOST "ls"
+      - run: echo $SSH_USER
+      - run: echo $SSH_HOST 
